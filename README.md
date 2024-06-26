@@ -1,109 +1,94 @@
-# 🤖 𝙅𝙞𝙣𝘽𝙤𝙩 🤖  
-<a href="https://discord.gg/uZv3aF8rVM">
-	<img src="https://img.shields.io/badge/discord-%2324292e.svg?&style=for-the-badge&logo=discord&logoColor=white" alt="Discord"/>
-</a>
-
-
-
-<!-- ## `01/17/2023`, Now using Repl because Heroku isn't free anymore. -->
-### Este es un bot que funciona 24/7, creado por JinMori
-### [YOUTUBE](https://www.youtube.com/@JinMoriMinecraft)
+# AterBot ✨  
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](/LICENSE)  
+### Keep your Aternos server alive 24/7.
+Please star this project <3  
 <br/>
 
 
 
-# Requisitos 📚
-1. Una cuenta en github (Para cargar el código).  
-	Registrate en: (https://github.com)
-
-2. Una cuenta en Cron-Job (Para mantenerlo 24/7).  
-	Registrate en: https://cron-job.org
-
-3. Tu servidor de minecraft.  
-	Recuerda cambiar en la configuración: ``online-mode`` y ponerlo en ``false``!  
-	También debes tener OP, para colocar los bots en modo creativo
-   	/gamemode creative Bot1
+# Important Notice 📢
+### This project will be unmaintained until at least 2024.<br/>But you can use it as usual.
 
 
 
-# Instalación ⚙
-1. Inicia tu servidor y entra en él.
-2. Elige una parte de tu mapa, y crea un espacio con bedrock para los bots.  
-(Tamaño recomendado: `X5 Y3 Z5`, es decir, 5 de largo, 5 de ancho y 3 bloques de alto, pero puedes hacerlo a tu gusto.)
-3. Ve a github.
-4. Ahora, descarga el .rar, busca `config.json`.
-5. Una vez entras a `config.json`, podrás cambiar lo siguiente:
-   
-`{
-	"client": {
-		"host": "ip.aternos.me",
-		"port": "25565",
-		"username": "JinB1"
-	},`
- 
- Reemplaza en `ip.aternos.me` por la ip de tu servidor, si utilizas aternos, sería algo así como `bot.aternos.me`,
- En `port` deberás cambiar el `25565` por el puerto de tu servidor, en caso de aternos, aparece en el menú principal del servidor,
- Puedes reemplazar el `username`, en este caso `JinB1` por el nombre que desees.
+# Requirements 🎒
+1. A Replit account.  
+	Sign up at: https://replit.com/signup
 
- Luego de esto deberás subirlo a github y seguir los pasos del video.
-   
-𝐑𝐞𝐜𝐨𝐦𝐞𝐧𝐝𝐚𝐦𝐨𝐬 𝐜𝐫𝐞𝐚𝐫 𝐝𝐨𝐬 𝐛𝐨𝐭𝐬 𝐲𝐚 𝐪𝐮𝐞 𝐬𝐢 𝐮𝐧𝐨 𝐬𝐞 𝐝𝐞𝐬𝐜𝐨𝐧𝐞𝐜𝐭𝐚, 𝐞𝐥 𝐨𝐭𝐫𝐨 𝐬𝐞𝐠𝐮𝐢𝐫á 𝐚𝐡í, 𝐜𝐫𝐞𝐚𝐧𝐝𝐨 𝐮𝐧 𝐜𝐢𝐜𝐥𝐨.
-**RECUERDA PONERLO EN MODO CREATIVO!!**  
+2. An UptimeRobot account.  
+	Sign up at: https://uptimerobot.com/signUp
 
-# Preguntas frecuentes ❓
-> ### 1: Mi bot se desconecta.
+3. A Minecraft server you owned.  
+	Make sure your server settings ``online-mode`` set to ``false``!  
+	And you should have an OP permission!
+
+
+
+# Setup ⚙
+1. Join your server.
+2. Build a bedrock room somewhere, and stay in there.  
+(Recommended room size: `X5 Y3 Z5`)
+3. Go to [Replit](https://replit.com/).
+4. Click `+` at the top right, click `Import from GitHub` at the close button.
+5. Put `https://github.com/JadeMin/aterbot.git` into `GitHub URL`, click `Create Repl`.
+6. Click `Run` at the top, your bot will join your server.  
+7. **Teleport the bot into the bedrock room, change the bot's gamemode to `Creative` to not die!**
+8. You'll see the `Webview` tab on Repl, copy the url.
+10. Go to [UptimeRobot](https://uptimerobot.com/dashboard).
+11. Click `Add New Monitor`, select `Monitor Type` to `HTTP(s)`.
+12. Paste the url copied in `Step 8` into `URL (or IP)`.
+13. Click `Create Monitor` 2 times.
+
+Finally... DONE! Enjoy your free 24/7 Aternos server.
+
+
+
+# FAQ ❓
+> #### Q1: My bot leaves immediately when I close the Repl page.
 <details><summary>A1:</summary>
 
-Esto puede suceder a menudo por diferentes errores, es tan simple como reiniciar el bot, o crearlo de nuevo.
+Repl projects are automatically turned off when close the window, or after 5 minutes of inactivity.  
+And UptimeRobot trying to wake it up in every 5 minutes.  
+So you can just leave it even if it's not working for a while.  
 </details>
 
 <hr/>
 
-> ### 2: Error `unsupported/unknown protocol version: ###, update minecraft-data`?
+> #### Q2: How to fix `unsupported/unknown protocol version: ###, update minecraft-data`?
 <details><summary>A2:</summary>
 
-Este error puede darse porque no todas las versiones son compatibles con mineflayer.
-A la fecha 17/12/23, el bot es compatible con:
-`- Supports Minecraft 1.8, 1.9, 1.10, 1.11, 1.12, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19 and 1.20.`
-Si tu bot no entra a la version que quieres, puedes probar usando el plugin ViaVersion, el cual hará que tu bot pueda entrar
-en versiones compatibles. Si tu version es antigua, puedes usar ViaVersion Backwards para que funcione. (Testeado en 1.16.5, no requiere
-via version ni backwards.)
-
+This project is using the `mineflayer` module.  
+**It may not supported on your server version yet.**  
+I'm trying to periodically check for updates, so please be patient.
 </details>
 
 <hr/>
 
-> ### 3: El bot está baneado?
+> #### Q3: How to fix `Invalid move player packet received`?
 <details><summary>A3:</summary>
 
-En caso de aternos, tienen un sistema que banea jugadores que han estado `Afk` durante mucho tiempo.
-Puedes desbanearlos manualmente si esto sucede, o cambiar el nombre del bot en la config del replit.
+It seems your bot escaped from the bedrock room.    
+So you have to wipe the playerdata in your server.  
+1. Go to the management page of your Aternos server.
+2. Click `Files` in the left section.
+3. Delete the `world/playerdata/<UUID>.dat`, `<UUID>.dat_old` file. (the UUID is your bot's UUID)
+4. Restart the bot.
+
+**Lock the bot somewhere as soon as possible!**  
+**And change the bot's gamemode to `Creative` to not die.**
 </details>
 
 <hr/>
 
-> ### 4: Funciona en bedrock?
+> #### Q4: My bot leaves permanently after n hours.
 <details><summary>A4:</summary>
 
-Sí, funciona perfectamente en Bedrock, pero utilizando GeyserMC, creando un servidor de Java.
-Requerirás el plugin GeyserMC y los plugins de ViaVersion.
-Si no sabes instalar Geyser, hay muchos tutoriales en youtube!
+Aternos automatically bans AFK players from your server.  
+So just unban your bot, if it's banned.
 </details>
 
-<hr/>
-
-> ### 5: Funciona con mods?
-<details><summary>A5:</summary>
-
-A día de hoy, **NO** hay protocolos que funcionen para hacer correr el bot con mods. Ya que es algo externo al minecraft en sí.
-</details>
-
-<hr/>
 
 
-# PRECAUCIÓN ⚠
-### Este bot está desarrollado solo por entretenimiento y a modo de pruebas.
-### No somos responsables de baneos o bugs que puedan generar en hostings como aternos.
-**NO RECOMIENDO USARLO EN TU SERVIDOR PRINCIPAL, USALO EN UNO SECUNDARIO SI QUIERES CONFIGURAR COSAS O CONSTRUIR, ETC**
-**SI TIENES DUDAS O PREGUNTAS, PUEDES ENTRAR A NUESTRO DISCORD CON EL BOTÓN QUE ESTÁ AL PRINCIPIO DE ESTA PÁGINA**
-**TODOS LOS DERECHOS DE ESTE CODIGO A ATENEA STUDIO**
+# CAUTION ⚠
+### Aternos might detect your suspicious actions and delete your account!  
+**By using this, you acknowledge that you're responsible for any problems arise.**  
